@@ -3,9 +3,9 @@ import { KeypadValuesDefault } from "../../constants";
 import { getButtonType } from "../../helpers";
 import { Button } from "./Button";
 import "./NumericKeypad.css";
-import { INumericKeypad } from "./types";
+import { INumericKeypadProps } from "./types";
 
-export const NumericKeypad: FC<INumericKeypad> = React.memo(
+export const NumericKeypad: FC<INumericKeypadProps> = React.memo(
   ({ handleOnClick }) => {
     return (
       <div className="keypad-wrapper">

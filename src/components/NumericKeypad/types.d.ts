@@ -3,6 +3,6 @@ export interface IButtonProps
   type?: "default" | "number" | "operation";
 }
 
-export interface INumericKeypad {
+export interface INumericKeypadProps {
   handleOnClick: (value: string) => void;
 }
