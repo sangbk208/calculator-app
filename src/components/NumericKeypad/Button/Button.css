@@ -1,0 +1,45 @@
+.button-container {
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    overflow: hidden;
+  }
+
+.button-default{
+    background-color: var(--blue-grey-primary);
+    color: black;
+}
+.button-default:hover{
+    background-color: var(--blue-grey-light);
+}
+.button-default:active{
+    background-color: var(--blue-grey-dark);
+}
+
+.button-number{
+    background-color: var(--grey-primary);
+    color: white;
+}
+.button-number:hover{
+    background-color: var(--grey-light);
+}
+.button-number:active{
+    background-color: var(--grey-dark);
+}
+
+.button-calculation{
+    background-color: var(--orange-primary);
+    color: white;
+}
+.button-calculation:hover{
+    background-color: var(--orange-light);
+}
+.button-calculation:active{
+    background-color: var(--orange-dark);
+}
+
