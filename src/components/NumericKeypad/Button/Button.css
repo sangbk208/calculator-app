@@ -4,8 +4,6 @@
     cursor: pointer;
     border-radius: 8px;
     outline: none;
-    width: 80px;
-    height: 80px;
     border: none;
     overflow: hidden;
   }
@@ -32,14 +30,15 @@
     background-color: var(--grey-dark);
 }
 
-.button-calculation{
+.button-operation{
     background-color: var(--orange-primary);
     color: white;
 }
-.button-calculation:hover{
+.button-operation:hover{
     background-color: var(--orange-light);
 }
-.button-calculation:active{
+.button-operation:active{
     background-color: var(--orange-dark);
 }
+
 

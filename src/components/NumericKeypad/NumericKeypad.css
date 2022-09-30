@@ -1,0 +1,16 @@
+.keypad-wrapper {
+    width: 400px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 8px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.keypad-button-0{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
