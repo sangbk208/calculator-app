@@ -1,8 +1,11 @@
 export interface IButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  type?: "default" | "number" | "operation";
+  type?: "default" | "number" | "operator";
+  isActive?: boolean;
 }
 
 export interface INumericKeypadProps {
   handleOnClick: (value: string) => void;
+  isClearAvailable: boolean;
+  operator: "" | "+" | "-" | "x" | "/";
 }
