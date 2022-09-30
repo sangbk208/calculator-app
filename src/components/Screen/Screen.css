@@ -1,0 +1,22 @@
+.screen-container{
+    width: 422px;
+    box-sizing: border-box;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.screen-input{
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    outline: none;
+    text-align: right;
+    border-radius: 6px;
+    border: none;
+    padding: 0 5px;
+}
