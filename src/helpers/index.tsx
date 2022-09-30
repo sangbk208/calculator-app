@@ -7,3 +7,20 @@ export const getButtonType = (value: string) => {
   }
   return "default";
 };
+
+export const calculatorOperations = (
+  operation: "+" | "-" | "x" | "/",
+  firstOperand: number,
+  secondOperand: number
+) => {
+  switch (operation) {
+    case "+":
+      return firstOperand + secondOperand;
+    case "-":
+      return firstOperand - secondOperand;
+    case "x":
+      return firstOperand * secondOperand;
+    default:
+      return firstOperand / secondOperand;
+  }
+};
