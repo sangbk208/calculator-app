@@ -12,7 +12,11 @@ export const CalculationHistory: FC<ICalculationHistory> = ({ className }) => {
 
   const renderCalculations = () => {
     if (!calculations) {
-      return <div>Empty</div>;
+      return (
+        <div className="calculation-history__empty">
+          Calculation history is empty
+        </div>
+      );
     }
     return (
       <div className="calculation-history__items">

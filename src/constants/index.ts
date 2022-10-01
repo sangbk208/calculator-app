@@ -5,3 +5,5 @@ export const KeypadValuesDefault = [
   ["1", "2", "3", "+"],
   ["0", ".", "="],
 ];
+
+export const CALCULATION_HISTORY_KEY = "calculation-history";

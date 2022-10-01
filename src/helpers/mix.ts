@@ -1,4 +1,5 @@
-import { IOperatorProp } from "../hooks/calculator/type";
+import { IcalculationProp } from "../components/CalculationHistory/type";
+import { CALCULATION_HISTORY_KEY } from "../constants";
 import { getLocalStorage, setLocalStorage } from "./localStorage";
 
 export const getButtonType = (value: string) => {
@@ -30,24 +31,22 @@ export const calculatorOperations = (
   }
 };
 
-export const updateCalculationHistory = (calculation: {
-  firstOperand: string;
-  secondOperand: string;
-  operator: IOperatorProp;
-  result: string;
-}) => {
-  const values = getLocalStorage("calculation-history") as string[];
+export const updateCalculationHistory = (calculation: IcalculationProp) => {
+  const values = getLocalStorage(CALCULATION_HISTORY_KEY) as string[];
 
   if (!values) {
-    setLocalStorage("calculation-history", [calculation]);
+    setLocalStorage(CALCULATION_HISTORY_KEY, [calculation]);
     return;
   }
 
-  if (values.length < 10) {
-    setLocalStorage("calculation-history", [calculation, ...values]);
+  if (values.length < 20) {
+    setLocalStorage(CALCULATION_HISTORY_KEY, [calculation, ...values]);
   } else {
     const newValue = [...values];
     newValue.pop();
-    setLocalStorage("calculation-history", [calculation, ...newValue]);
+    setLocalStorage(CALCULATION_HISTORY_KEY, [calculation, ...newValue]);
   }
 };
+
+export const formatCalculation = (calculation: IcalculationProp) =>
+  `${calculation.firstOperand} ${calculation.operator} ${calculation.secondOperand} = ${calculation.result}`;
