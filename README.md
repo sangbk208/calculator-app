@@ -113,8 +113,7 @@
 <img src="https://scontent.fdad1-3.fna.fbcdn.net/v/t1.15752-9/309629645_389344673249796_8323968441335206452_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=yh5hzb5-c2sAX8YbDEE&_nc_ht=scontent.fdad1-3.fna&oh=03_AVLBG2Efuv67ze5BFpcuRAEQneqLi9-zWKwO0Hqz4enwGg&oe=635F362A" />
 
 * Usage tips:
-  * Use this key to toggle showing all the calculation history of the current session.
-  * To clear entire history of the current session, you need to start a new session by refreshing the web page.
+  * Use this key to toggle showing all the calculation history.
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -175,7 +174,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Sang Nguyen- [@sbk208](https://www.linkedin.com/in/sbk208/) - sbk208gmail.com
+Sang Nguyen- [@sbk208](https://www.linkedin.com/in/sbk208/) - sangbk208@gmail.com
 
 Project Link: [https://github.com/sangbk208/calculator-app](https://github.com/sangbk208/calculator-app/)
 
