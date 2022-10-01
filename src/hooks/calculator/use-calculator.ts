@@ -142,7 +142,6 @@ export const useCalculator = () => {
 
   return {
     displayValue: getDisplayValue(),
-    operator: calculationState.operator,
     setCalculationState,
     inputEqual,
     inputNumber,
@@ -151,5 +150,6 @@ export const useCalculator = () => {
     toggleSign,
     clear,
     isAllClear,
+    calculationState,
   };
 };
