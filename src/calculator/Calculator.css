@@ -1,0 +1,24 @@
+.calculator-container{
+    position: relative;
+}
+
+.calculator-screen{
+    margin-bottom: 10px;
+}
+
+.calculation-history-class{
+    position: absolute;
+    width: 400px;
+    right: -405px;
+    top:0;
+    background-color: wheat;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-align: left;
+}
+
+
+
+
