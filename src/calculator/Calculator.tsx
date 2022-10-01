@@ -8,7 +8,7 @@ import "./Calculator.css";
 
 export const Calculator = () => {
   const {
-    operator,
+    calculationState,
     displayValue,
     inputEqual,
     inputNumber,
@@ -58,7 +58,7 @@ export const Calculator = () => {
       />
       <NumericKeypad
         handleOnClick={onClickKeypad}
-        operator={operator}
+        operator={calculationState.operator}
         isAllClear={isAllClear()}
       />
       {isShowHistory && (
