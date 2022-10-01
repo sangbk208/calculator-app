@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { KeypadValuesDefault } from "../../constants";
-import { getButtonType } from "../../helpers";
+import { getButtonType } from "../../helpers/mix";
 import { Button } from "./Button";
 import "./NumericKeypad.css";
 import { INumericKeypadProps } from "./types";

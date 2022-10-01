@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { calculatorOperations } from "../../helpers";
+import {
+  calculatorOperations,
+  updateCalculationHistory,
+} from "../../helpers/mix";
 import { ICalculationStateProp, IOperatorProp } from "./type";
 
 export const initialCalculationState: ICalculationStateProp = {
@@ -38,6 +41,13 @@ export const useCalculator = () => {
         Number(firstOperand),
         Number(secondOperand)
       );
+      updateCalculationHistory({
+        firstOperand: firstOperand,
+        secondOperand: secondOperand,
+        operator: operator as IOperatorProp,
+        result: String(result),
+      });
+
       setCalculationState({
         firstOperand: String(result),
         secondOperand: "",
@@ -58,6 +68,13 @@ export const useCalculator = () => {
         Number(firstOperand),
         Number(secondOperand !== "" ? secondOperand : firstOperand)
       );
+      updateCalculationHistory({
+        firstOperand: firstOperand,
+        secondOperand: secondOperand,
+        operator: operator as IOperatorProp,
+        result: String(result),
+      });
+
       if (secondOperand === "") {
         setCalculationState({
           ...calculationState,
@@ -82,6 +99,7 @@ export const useCalculator = () => {
       });
       return;
     }
+
     if (!/\./.test(secondOperand) && secondOperand !== "") {
       setCalculationState({
         ...calculationState,

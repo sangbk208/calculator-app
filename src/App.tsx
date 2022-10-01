@@ -5,10 +5,8 @@ import { Calculator } from "./calculator";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Calculator App</p>
-        <Calculator />
-      </header>
+      <h1 className="title">Calculator App</h1>
+      <Calculator />
     </div>
   );
 }
