@@ -3,6 +3,8 @@ import { CALCULATION_HISTORY_KEY } from "../constants";
 import { setLocalStorage } from "./localStorage";
 import {
   calculatorOperations,
+  formatCalculation,
+  formattedValue,
   getButtonType,
   updateCalculationHistory,
 } from "./mix";
@@ -159,6 +161,14 @@ describe("mix.ts in helper folder", () => {
     expect(calculatorOperations("-", 4, 10)).toEqual(-6);
     expect(calculatorOperations("x", 4, 10)).toEqual(40);
     expect(calculatorOperations("/", 4, 10)).toEqual(0.4);
+  });
+
+  it("formatCalculation()", () => {
+    expect(formatCalculation(calculation)).toEqual("2 x 3 = 6");
+  });
+
+  it("formatDisplayValue()", () => {
+    expect(formattedValue("1234567890.")).toEqual("1,234,567,890.");
   });
 
   describe("updateCalculationHistory", () => {

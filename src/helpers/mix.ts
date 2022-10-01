@@ -54,7 +54,7 @@ export const formatCalculation = (calculation: IcalculationProp) =>
 export const formattedValue = (value: string) => {
   let formattedValue = parseFloat(value).toLocaleString("en-US", {
     useGrouping: true,
-    maximumFractionDigits: 6,
+    maximumFractionDigits: 8,
   });
   const match = value.match(/\.\d*?(0*)$/);
 
