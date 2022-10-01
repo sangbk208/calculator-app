@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CalculationHistory } from "../components/CalculationHistory";
 import { NumericKeypad } from "../components/NumericKeypad";
 import { Screen } from "../components/Screen/Screen";
+import { formattedValue } from "../helpers/mix";
 import { useCalculator } from "../hooks/calculator";
 import "./Calculator.css";
 
@@ -14,7 +15,8 @@ export const Calculator = () => {
     inputOperator,
     inputDot,
     toggleSign,
-    clearAll,
+    clear,
+    isAllClear,
   } = useCalculator();
 
   const [isShowHistory, setIsShowHistory] = useState(false);
@@ -22,7 +24,8 @@ export const Calculator = () => {
   const onClickKeypad = (key: string) => {
     switch (key) {
       case "C":
-        clearAll();
+      case "AC":
+        clear(key);
         break;
       case "=":
         inputEqual();
@@ -49,11 +52,14 @@ export const Calculator = () => {
 
   return (
     <div className="calculator-container">
-      <Screen className="calculator-screen" displayValue={displayValue} />
+      <Screen
+        className="calculator-screen"
+        displayValue={formattedValue(displayValue)}
+      />
       <NumericKeypad
         handleOnClick={onClickKeypad}
         operator={operator}
-        isClearAvailable={displayValue !== "0" || operator !== ""}
+        isAllClear={isAllClear()}
       />
       {isShowHistory && (
         <CalculationHistory className="calculation-history-class" />

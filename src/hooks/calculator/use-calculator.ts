@@ -79,7 +79,6 @@ export const useCalculator = () => {
         setCalculationState({
           ...calculationState,
           firstOperand: String(result),
-          operator: "",
         });
         return;
       }
@@ -122,14 +121,24 @@ export const useCalculator = () => {
     });
   };
 
-  const clearAll = () => {
+  const clear = (key: "AC" | "C") => {
     if (
+      key === "AC" &&
       JSON.stringify(calculationState) !==
-      JSON.stringify(initialCalculationState)
+        JSON.stringify(initialCalculationState)
     ) {
       setCalculationState(initialCalculationState);
+      return;
+    }
+    if (operator !== "" && secondOperand !== "") {
+      setCalculationState({
+        ...calculationState,
+        secondOperand: "0",
+      });
     }
   };
+
+  const isAllClear = () => operator === "" || secondOperand === "";
 
   return {
     displayValue: getDisplayValue(),
@@ -140,6 +149,7 @@ export const useCalculator = () => {
     inputOperator,
     inputDot,
     toggleSign,
-    clearAll,
+    clear,
+    isAllClear,
   };
 };

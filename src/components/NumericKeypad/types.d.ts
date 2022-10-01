@@ -6,6 +6,6 @@ export interface IButtonProps
 
 export interface INumericKeypadProps {
   handleOnClick: (value: string) => void;
-  isClearAvailable: boolean;
+  isAllClear: boolean;
   operator: "" | "+" | "-" | "x" | "/";
 }
