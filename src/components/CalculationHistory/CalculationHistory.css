@@ -1,0 +1,30 @@
+.calculation-history-container{
+    box-sizing: border-box;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.calculation-history__title{
+    font-size: 30px;
+    color: var(--orange-primary);
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    padding: 4px;
+    border-bottom: 1px solid var(--grey-primary);
+}
+
+.calculation-history__items{
+    padding: 20px 12px 0 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.calculation-history__items div{
+    font-size: 18px;
+    margin-bottom: 8px;
+    overflow: auto;
+}
