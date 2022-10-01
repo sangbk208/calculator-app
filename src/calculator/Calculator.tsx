@@ -14,7 +14,8 @@ export const Calculator = () => {
     inputOperator,
     inputDot,
     toggleSign,
-    clearAll,
+    clear,
+    isAllClear,
   } = useCalculator();
 
   const [isShowHistory, setIsShowHistory] = useState(false);
@@ -22,7 +23,8 @@ export const Calculator = () => {
   const onClickKeypad = (key: string) => {
     switch (key) {
       case "C":
-        clearAll();
+      case "AC":
+        clear(key);
         break;
       case "=":
         inputEqual();
@@ -53,7 +55,7 @@ export const Calculator = () => {
       <NumericKeypad
         handleOnClick={onClickKeypad}
         operator={operator}
-        isClearAvailable={displayValue !== "0" || operator !== ""}
+        isAllClear={isAllClear()}
       />
       {isShowHistory && (
         <CalculationHistory className="calculation-history-class" />
