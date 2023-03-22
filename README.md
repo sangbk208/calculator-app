@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/sangbk208/calculator-app">
-    <img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-9/308047587_3329898974000205_1583447077611546330_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_aid=0&_nc_ohc=jkL9j-vxr-8AX8GOXDP&_nc_ht=scontent.fdad2-1.fna&oh=03_AVLQ21blP-RfP5MPIELObotwyAX7syRoUVBrF0r5Wrc6-g&oe=635B9DB2" alt="Logo" width="80" height="80">
+    <img src="https://user-images.githubusercontent.com/50744056/226798917-c7ef76c7-c568-49a1-a7cd-e040efc594fb.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">My ReactJS Pocket Calculator</h3>
@@ -57,10 +57,9 @@
 ## About The Project
 
 <p style="text-align:center;font-weight:bold">Get the iconic look and feel of your day to day built in pocket calculator of iOS. But now with the enhanced calculation history feature. </p>
-
-
-<img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-9/308433588_1273027566824995_5015009295740470954_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=oar96CWt48sAX8zrowq&tn=UFFp9KPWjuFB6obj&_nc_ht=scontent.fdad2-1.fna&oh=03_AVI8gHCTn9y6EjvraUHuw8eLyMeCzlhqvSEgvw9qoGFyKw&oe=635E2CF9"/>
-
+<p align="center">
+  <img width="887" alt="Screenshot 2023-03-22 at 11 02 03" src="https://user-images.githubusercontent.com/50744056/226799718-6159ab8f-9740-4871-9c4c-985678b5d54f.png">
+</p>
 
 ### Built With 
 [![React][React.js]][React-url]
@@ -69,7 +68,9 @@
 ### Features
 
 1. Basic calculation with addition, subtraction, multiplication and division operations
-<img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-9/302042237_2331647100324576_5680458437511974654_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Ihde2kCYu6QAX9W5q2q&_nc_ht=scontent.fdad2-1.fna&oh=03_AVIvXlOck9a-qJvgHzq8KR2kV2BX1JcIf-RhI5A1cCwgug&oe=635C33D4"/>
+<p align="center">
+<img width="441" alt="image" src="https://user-images.githubusercontent.com/50744056/226800016-d2e6fcc7-3dd6-4fa8-9e28-424c3ba2fb69.png">
+</p>
 
 * Usage tips:
   * We support single operation as well as chain of operations.
@@ -79,14 +80,18 @@
     * As a result, operators precedence is not supported in this version of the application (that could be supported if we implement parenthesis operators)
    
 2. Toggle between negative and positive numbers
-<img src="https://scontent.fdad1-4.fna.fbcdn.net/v/t1.15752-9/308843076_1347455919118309_840018354301587158_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ClM1E7jNHHUAX-m3Ul3&_nc_ht=scontent.fdad1-4.fna&oh=03_AVISeAsCykoqdcaCLtwktVV8En0rG8apBtefV6i3-SoNPw&oe=635ED5A4" />
+<p align="center">
+  <img width="435" alt="image" src="https://user-images.githubusercontent.com/50744056/226800265-c0fcef20-5ba1-4e63-8333-77512e095531.png">
+</p>
 
 * Usage tips:
   * Use this key to toggle between positive and negative number after entering any operands
   * If you toggle this key before inputting the second operand (which means just after entering the operator), it will apply the logic to the first operand and use it as the second operand for the operation.
 
 3. Calulation with decimal numbers
-<img src="https://scontent.fdad1-3.fna.fbcdn.net/v/t1.15752-9/307937178_1150144429219046_7504176242925541684_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=64vi5kid8OoAX9GJ3fA&_nc_ht=scontent.fdad1-3.fna&oh=03_AVIRakYIftKVbAFYwvA2zTVLi_8zV1AcJ4YU1IgF5lGa0Q&oe=635D8329" />
+<p align="center">
+  <img width="433" alt="image" src="https://user-images.githubusercontent.com/50744056/226800555-c1dd3f28-366a-4777-83a1-4eddde8ac52a.png">
+</p>
 
 * Usage tips:
   * Use this key before entering the decimal part of a operand
@@ -94,15 +99,18 @@
   * We round the result of all operations with decimal numbers upto 8 numbers after the decimal point.
 
 4. Clear the most recent entry
-<img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-9/308389188_658027405887436_5148273979904267451_n.png?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=AZOmbZlyZMoAX_5Rhy3&tn=UFFp9KPWjuFB6obj&_nc_ht=scontent.fdad2-1.fna&oh=03_AVK7VzAMy7SmUh_bfHWUEC063g_A8tsdn-B6ujIuJBjCSw&oe=635C0DD0" />
-
+<p align="center">
+  <img width="436" alt="image" src="https://user-images.githubusercontent.com/50744056/226800793-44f7f2fb-7c5f-4162-950a-c555c832a650.png">
+</p>
 * Usage tips:
   * Using this feature don't affect the existing calculation history.
   * You could use this key to clear the most recent input entry (which could be either operand or operator)
   * We only support clearing the most recent entry, which means after selecting this key, it will be changed from C to AC, that only allows you to reset the current calculation.
 
 5. Clear all entries
-<img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-9/309009763_6105273466153374_6911582910582384583_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=7J06g0-W_X8AX8OMOuV&_nc_ht=scontent.fdad2-1.fna&oh=03_AVLZeHnLFbjkvzpmjNxRFZQqEGxaa7g9sGSeUzxTNuupuw&oe=635D378B" />
+<p align="center">
+  <img width="435" alt="image" src="https://user-images.githubusercontent.com/50744056/226801068-7c139ea0-bf3a-4e61-8598-67fcac8b943d.png">
+</p>
 
 * Usage tips:
   * Using this feature don't affect the existing calculation history.
@@ -110,7 +118,9 @@
   * Selecting the key multiple times does't change its behaviour. 
 
 6. Toggle showing calculation history
-<img src="https://scontent.fdad1-3.fna.fbcdn.net/v/t1.15752-9/309629645_389344673249796_8323968441335206452_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=yh5hzb5-c2sAX8YbDEE&_nc_ht=scontent.fdad1-3.fna&oh=03_AVLBG2Efuv67ze5BFpcuRAEQneqLi9-zWKwO0Hqz4enwGg&oe=635F362A" />
+<p align="center">
+  <img width="841" alt="image" src="https://user-images.githubusercontent.com/50744056/226801160-ccfb626b-40c1-4422-97be-05e1819d2ffb.png">
+</p>
 
 * Usage tips:
   * Use this key to toggle showing all the calculation history.
