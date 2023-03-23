@@ -1,12 +1,12 @@
-import { IOperatorProp } from "../../hooks/calculator/type";
+import { type IOperatorProp } from '../../hooks/calculator/type'
 
 export interface ICalculationHistory {
-  className?: string;
+  className?: string
 }
 
-export type IcalculationProp = {
-  firstOperand: string;
-  secondOperand: string;
-  operator: IOperatorProp;
-  result: string;
-};
+export interface IcalculationProp {
+  firstOperand: string
+  secondOperand: string
+  operator: IOperatorProp
+  result: string
+}

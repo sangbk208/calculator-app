@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "build",
     "target": "es5",
     "lib": [
       "dom",
@@ -7,6 +8,7 @@
       "esnext"
     ],
     "allowJs": true,
+    "sourceMap": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -22,5 +24,9 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
   ]
 }

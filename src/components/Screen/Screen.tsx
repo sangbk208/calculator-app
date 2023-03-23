@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import "./Screen.css";
-import { IScreenProps } from "./type";
+import React, { type FC } from 'react'
+import './Screen.css'
+import { type IScreenProps } from './type'
 
 export const Screen: FC<IScreenProps> = ({ displayValue, className }) => {
   return (
@@ -15,5 +15,5 @@ export const Screen: FC<IScreenProps> = ({ displayValue, className }) => {
         value={displayValue}
       />
     </div>
-  );
-};
+  )
+}

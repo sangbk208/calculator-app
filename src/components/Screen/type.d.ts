@@ -1,4 +1,4 @@
 export interface IScreenProps {
-  displayValue: string;
-  className?: string;
+  displayValue: string
+  className?: string
 }
